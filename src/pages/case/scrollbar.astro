@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = 'Smooth Scrollbar';
+---
+
+<Layout title={title}>
+	<main class='bg-pink-200'></main>
+	<main class='bg-blue-200'></main>
+	<main class='bg-red-200'></main>
+	<main class='bg-violet-200'></main>
+	<main class='bg-emerald-200'></main>
+	<main class='bg-purple-200'></main>
+</Layout>
+
+<script>
+	import Scrollbar from 'smooth-scrollbar';
+	const scrollbar = Scrollbar.init(document.body);
+</script>
+
+<style>
+	body {
+		height: 100vh;
+		overflow: hidden;
+	}
+</style>

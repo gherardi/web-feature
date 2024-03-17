@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const cases = await Astro.glob('./case/*.astro');
+---
+
+<Layout title='Navigation page'>
+	<main class='flex h-svh items-center justify-center'>
+		<nav class='grid gap-y-2'>
+			{
+				cases.map((c) => (
+					<a href={c.url} class='underline text-blue-800'>
+						{c.url}
+					</a>
+				))
+			}
+		</nav>
+	</main>
+</Layout>

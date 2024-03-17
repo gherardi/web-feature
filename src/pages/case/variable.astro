@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = 'Variable weight';
+---
+
+<Layout title={title}>
+	<main class='max-w-4xl mx-auto'>
+		<p class='uppercase text-center pt-44 text-4xl'>frontend developer</p>
+		<p class='text-center mt-8'>
+			provare a farlo con gsap o anime per dare stagger alle lettere singole
+		</p>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+	p:first-of-type {
+		/* font-weight: 200;
+    font-variation-settings: 'wght' 200; */
+		/* animation: variant 1s infinite alternate forwards; */
+		animation: variant 2s infinite alternate;
+	}
+
+	@keyframes variant {
+		from {
+			font-variation-settings: 'wght' 200;
+		}
+		to {
+			font-variation-settings: 'wght' 700;
+		}
+	}
+</style>
