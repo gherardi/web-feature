@@ -7,7 +7,7 @@ const title = 'Staggered grid';
 	<div id='tiles'></div>
 </Layout>
 
-<style is:inline>
+<style>
 	:root {
 		--g1: rgb(98, 0, 234);
 		--g2: rgb(236, 64, 122);
@@ -23,7 +23,7 @@ const title = 'Staggered grid';
 		}
 	}
 
-	body {
+	main {
 		animation: background-pan 10s linear infinite;
 		background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
 		background-size: 200%;
