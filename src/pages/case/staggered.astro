@@ -7,7 +7,7 @@ const title = 'Staggered grid';
 	<div id='tiles'></div>
 </Layout>
 
-<style>
+<style is:inline>
 	:root {
 		--g1: rgb(98, 0, 234);
 		--g2: rgb(236, 64, 122);
@@ -111,6 +111,7 @@ const title = 'Staggered grid';
 </style>
 
 <script is:inline src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
+
 <script is:inline lang='js'>
 	const wrapper = document.getElementById('tiles');
 
