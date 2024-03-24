@@ -1,0 +1,19 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+const title = 'View Transition';
+---
+
+<Layout title={title}>
+	<main>
+		<div class='max-w-6xl mx-auto'>
+			<div class='aspect-video overflow-hidden'>
+				<img
+					transition:name='terzo'
+					src='https://compote.slate.com/images/795f4201-6626-406e-8046-dd21f52381c0.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=1280'
+					alt='cat'
+					class='object-cover'
+				/>
+			</div>
+		</div>
+	</main>
+</Layout>

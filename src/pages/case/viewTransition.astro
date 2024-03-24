@@ -4,5 +4,40 @@ const title = 'View Transition';
 ---
 
 <Layout title={title}>
-	<main></main>
+	<main>
+		ritagliare le immagini in 16:9 per production
+		<div class='grid grid-cols-3 pt-28 max-w-6xl mx-auto gap-5'>
+			<div class='aspect-video overflow-hidden'>
+				<a href='/case/view/primo'
+					><img
+						transition:name='primo'
+						src='https://static.scientificamerican.com/sciam/cache/file/2AE14CDD-1265-470C-9B15F49024186C10_source.jpg?w=1200'
+						alt='cat'
+						class='object-cover'
+					/></a
+				>
+			</div>
+
+			<div class='aspect-video overflow-hidden'>
+				<a href='/case/view/secondo'>
+					<img
+						transition:name='secondo'
+						src='https://www.pbs.org/wnet/nature/files/2014/09/ExtraordinaryCats-Main-900x506.jpg'
+						alt='cat'
+						class='object-cover'
+					/></a
+				>
+			</div>
+			<div class='aspect-video overflow-hidden'>
+				<a href='/case/view/terzo'>
+					<img
+						transition:name='terzo'
+						src='https://compote.slate.com/images/795f4201-6626-406e-8046-dd21f52381c0.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=1280'
+						alt='cat'
+						class='object-cover'
+					/></a
+				>
+			</div>
+		</div>
+	</main>
 </Layout>
